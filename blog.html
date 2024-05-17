@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <section class="mx-10 my-24" >
+        <div class="collapse collapse-arrow bg-base-200 mb-10">
+            <input type="radio" name="my-accordion-2" checked="checked" /> 
+            <div class="collapse-title text-xl font-medium ">
+                Discuss the scope of var, let, and const
+            </div>
+            <div class="collapse-content"> 
+              <p>var declarations are globally scoped or function scoped while let and const are block scoped.
+                var variables can be updated and re-declared within its scope; let variables can be updated but not re-declared; const variables can neither be updated nor re-declared.
+                They are all hoisted to the top of their scope. But while var variables are initialized with undefined, let and const variables are not initialized.
+                While var and let can be declared without being initialized, const must be initialized during declaration.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200 mb-10">
+            <input type="radio" name="my-accordion-2" /> 
+            <div class="collapse-title text-xl font-medium">
+                Tell us the use cases of null and undefined
+            </div>
+            <div class="collapse-content"> 
+              <p>Null<br>1.Null means an empty value or a blank value.<br>2.The typeof() operator returns the type as an object for a variable whose value is assigned as null.<br>3.converts to 0 then perform the operation<br>4.Yes, as we assign null to a variable, it is an assignment value.<br><br>Undefined<br>1.Undefined means the variable has been declared, but its value has not been assigned.<br>2.The typeof() operator returns undefined for an undefined variable.<br>3.It returns NaN on performing arithmetic operations.<br>4.No, as there is no value assigned to the variable, it becomes undefined.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200 mb-10">
+            <input type="radio" name="my-accordion-2" /> 
+            <div class="collapse-title text-xl font-medium">
+                What do you mean by REST API?
+            </div>
+            <div class="collapse-content"> 
+              <p>REST API, which stands for Representational State Transfer Application Programming Interface, is a set of architectural principles and constraints for designing and interacting with web services. It is an approach to building web services that are scalable, stateless, and designed to work over HTTP (Hypertext Transfer Protocol).<br>
+
+                Key characteristics and concepts of REST API include:<br>
+                
+                1. Resources: In a RESTful API, everything is treated as a resource, which can be a data object, a service, or even a concept. Resources are identified by unique URIs (Uniform Resource Identifiers).<br>
+                
+                2. HTTP Methods: RESTful APIs use standard HTTP methods for performing operations on resources:
+                   - **GET**: Retrieve data from the server.
+                   - **POST**: Create a new resource on the server.
+                   - **PUT**: Update an existing resource on the server or create it if it doesn't exist.
+                   - **DELETE**: Remove a resource from the server.
+                   - And others like PATCH, HEAD, OPTIONS, etc.<br>
+                
+                3. Statelessness: REST APIs are stateless, meaning that each request from a client to a server must contain all the information needed to understand and process the request. There should be no reliance on the server's previous state.<br>
+                
+                4. Uniform Interface: REST APIs have a uniform and consistent interface, which simplifies the client's interaction with different resources. This includes the use of standard HTTP status codes (e.g., 200 OK, 404 Not Found) and standard conventions for resource naming.<br>
+                
+                5. Representation: Resources can have multiple representations (e.g., JSON, XML, HTML) to convey information to clients. Clients can specify their preferred representation in the request headers.<br>
+                
+                6. Stateless Communication: Each client request to the server is independent, and the server does not retain any information about the client's state between requests. Any necessary session state should be managed on the client side.<br>
+                
+                7. Layered System: REST allows for the use of intermediary components (e.g., load balancers, caches, gateways) to improve system scalability and performance. Clients are unaware of the existence of these intermediaries.<br>
+                
+                8. Client-Server Architecture: REST separates the concerns of the client and server, allowing them to evolve independently. This separation enhances scalability and flexibility.<br>
+                
+                9. Idempotence: Some HTTP methods, like GET and PUT, are idempotent, which means that making the same request multiple times will have the same effect as making it once. This property is important for ensuring predictability and safety of operations.<br>
+                
+                REST APIs are widely used for building web services and are the foundation of many modern web applications and mobile apps. They provide a standardized and flexible way for different systems to communicate and exchange data over the internet.</p><br>
+            </div>
+          </div>
+    </section>
+    
+</body>
+</html>
